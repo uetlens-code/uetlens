@@ -37,12 +37,18 @@ The repository includes pre-processed counterfactual datasets for 13 event subty
 | Justice     | 200   | 200     | 1,992 |
 | **Total**   | **1,300** | **1,300** | **12,217** |
 
-###  ACE 2005 Dataset Access 
-Due to copyright restrictions, the ACE 2005 Multilingual Training Corpus cannot be distributed with this repository. You must obtain it directly from the Linguistic Data Consortium (LDC):  
-- **Official source**: LDC2006T06 (https://doi.org/10.35111/mwxc-vh88)  
-- **Access**: LDC members download directly; non-members must purchase a license.  
+### ACE 2005 Dataset
+Due to copyright restrictions, the ACE 2005 Multilingual Training Corpus cannot be distributed with this repository. You must obtain it directly from the Linguistic Data Consortium (LDC):
+- **Official source**: LDC2006T06 (https://doi.org/10.35111/mwxc-vh88)
 
-
+### MAVEN Dataset
+The pre-processed MAVEN datasets used in this project are already included in the repository under the `data/` directory. The directory structure is as follows:
+```
+data/
+├── MAVEN13/        
+├── MAVEN13-Large/    
+└── feature_sets/     
+```
 
 ### File format
 
@@ -52,8 +58,6 @@ Due to copyright restrictions, the ACE 2005 Multilingual Training Corpus cannot 
 ```
 
 Each `.txt` file follows alternating lines: odd = target event type, even = counterfactual with altered type attribute. All datasets are organized under `data/` by dataset name and subtype.
-
-
 
 ---
 
